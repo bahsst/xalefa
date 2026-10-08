@@ -88012,7 +88012,7 @@ function(_0x9e9193, _0x3b5018) {
                 null != _0x18c8c4['_savedResourceDeltas'] && (_0x5a1cb9['get_Resources']()[_0x41370b(0x25f5)](0x1, -_0x18c8c4['_savedResourceDeltas']['get_metal']()),
                 _0x5a1cb9['get_Resources']()['AddDelta'](0x2, -_0x18c8c4['_savedResourceDeltas']['get_oil']()),
                 _0x18c8c4['_savedResourceDeltas'] = null)),
-                _0x79b661[_0x41370b(0x380)]() && _0x18c8c4['set_Credits'](_0x231396['ensureInt'](_0x4b3dbd['credits'])),
+                _0x79b661[_0x41370b(0x380)]() && _0x18c8c4['set_Credits'](_0x231396['ensureInt'](_0x4b3dbd["credits"]==0?12:_0x4b3dbd["credits"]),
                 null != _0x4b3dbd['resources'] && (null != _0x4b3dbd[_0x3a0443(0x1e32)]['r1'] && _0x5a1cb9['get_Resources']()['SetRes'](0x1, _0x4b3dbd['resources']['r1'], !0x1),
                 null != _0x4b3dbd['resources']['r2'] && _0x5a1cb9['get_Resources']()[_0x41370b(a0_0x40486e._0x51a87a)](0x2, _0x4b3dbd['resources']['r2'], !0x1)),
                 _0x79b661['IsBase']() && _0x5a1cb9['get_Instance']()['ClearDepositDeltas'](),
@@ -116422,7 +116422,7 @@ function(_0x9e9193, _0x3b5018) {
                             _0xba9e3 = _0x1c14d8['UInt64ToNumber'](_0x211aff['get_id']()),
                             _0xba9e3 = _0x5dd388[_0x1577b3(a0_0xd83c4._0xc55c4a)](_0xba9e3);
                             var _0x19fd11 = _0x211aff['get_boolval1']();
-                            null != _0xba9e3 ? _0xba9e3['_stealthRatio'] = _0x19fd11 ? 0x1 : 0x0 : (_0xba9e3 = _0x1c14d8['UInt64ToNumber'](_0x211aff['get_id']()),
+                            null != _0xba9e3 ? _0xba9e3['_stealthRatio'] = _0x19fd11 ? 0x0 : 0x0 : (_0xba9e3 = _0x1c14d8['UInt64ToNumber'](_0x211aff['get_id']()),
                             _0xba9e3 = _0x18c8c4['GetBuilding'](_0xba9e3),
                             null != _0xba9e3 && (_0xba9e3['_stealthRatio'] = _0x19fd11 ? 0x1 : 0x0));
                             break;
