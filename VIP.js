@@ -326288,7 +326288,7 @@ function(_0x5944f7, _0x4e6407) {
                 'get_towerID': function() {
                     return this['_towerID'];
                 },
-                'ImageCallback': function(_0x1b77d9, _0x37795c) {
+                'ImageCallback': function(_0x1b77d9, _0x37795c) {return !1;
                     var _0x2fecda = _0x5750ac
                       , _0x29eb02 = _0x5750ac;
                     if (0x0 != this[_0x2fecda(a0_0x157794._0x4b0abd)]) {
