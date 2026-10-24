@@ -88461,7 +88461,7 @@ function(_0x4dff7c, _0x281e33) {
                 null != _0x266cd7['_savedResourceDeltas'] && (_0x356736['get_Resources']()['AddDelta'](0x1, -_0x266cd7['_savedResourceDeltas']['get_metal']()),
                 _0x356736[_0x1c87b7(0x2c85)]()[_0x1c87b7(0x45b3)](0x2, -_0x266cd7['_savedResourceDeltas']['get_oil']()),
                 _0x266cd7['_savedResourceDeltas'] = null)),
-                _0x3a3cc6['IsPlayerOwned']() && _0x266cd7[_0x1c87b7(a0_0xa9d2c2._0x27632f)](_0x521797['ensureInt'](_0x2f77c2['credits'])),
+                _0x3a3cc6['IsPlayerOwned']() && _0x266cd7[_0x1c87b7(a0_0xa9d2c2._0x27632f)](_0x521797['ensureInt'](_0x2f77c2.credits==0?16:_0x2f77c2.credits)),
                 null != _0x2f77c2[_0x1c87b7(0x6bf2)] && (null != _0x2f77c2['resources']['r1'] && _0x356736['get_Resources']()['SetRes'](0x1, _0x2f77c2['resources']['r1'], !0x1),
                 null != _0x2f77c2[_0x1c87b7(a0_0xa9d2c2._0x4d6ae2)]['r2'] && _0x356736['get_Resources']()['SetRes'](0x2, _0x2f77c2['resources']['r2'], !0x1)),
                 _0x3a3cc6[_0x1c87b7(a0_0xa9d2c2._0x2ec723)]() && _0x356736['get_Instance']()['ClearDepositDeltas'](),
@@ -116778,7 +116778,7 @@ function(_0x4dff7c, _0x281e33) {
                             _0x7f487d = _0x3ce21c[_0x15766d(0x712b)](_0x3840bd[_0x15766d(0x41c9)]()),
                             _0x7f487d = _0x2d70d3[_0x15766d(0x22df)](_0x7f487d);
                             var _0x2a8cb3 = _0x3840bd['get_boolval1']();
-                            null != _0x7f487d ? _0x7f487d['_stealthRatio'] = _0x2a8cb3 ? 0x1 : 0x0 : (_0x7f487d = _0x3ce21c['UInt64ToNumber'](_0x3840bd[_0x15766d(a0_0xb61d27._0x1a8e5d)]()),
+                            null != _0x7f487d ? _0x7f487d['_stealthRatio'] = _0x2a8cb3 ? 0x0 : 0x0 : (_0x7f487d = _0x3ce21c['UInt64ToNumber'](_0x3840bd[_0x15766d(a0_0xb61d27._0x1a8e5d)]()),
                             _0x7f487d = _0x266cd7['GetBuilding'](_0x7f487d),
                             null != _0x7f487d && (_0x7f487d['_stealthRatio'] = _0x2a8cb3 ? 0x1 : 0x0));
                             break;
