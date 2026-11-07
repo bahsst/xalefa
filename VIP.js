@@ -88053,7 +88053,7 @@ function(_0x97b852, _0x435b01) {
                 null != _0x17eb63['_savedResourceDeltas'] && (_0x44f949['get_Resources']()[_0x2f1482(a0_0x27c7ac._0x4b8761)](0x1, -_0x17eb63['_savedResourceDeltas']['get_metal']()),
                 _0x44f949['get_Resources']()['AddDelta'](0x2, -_0x17eb63['_savedResourceDeltas']['get_oil']()),
                 _0x17eb63['_savedResourceDeltas'] = null)),
-                _0x2fd659[_0x41d39e(a0_0x27c7ac._0x139c01)]() && _0x17eb63['set_Credits'](_0x4555ed['ensureInt'](_0x38aceb.credits==0?9:_0x38aceb.credits)),
+                _0x2fd659[_0x41d39e(a0_0x27c7ac._0x139c01)]() && _0x17eb63['set_Credits'](_0x4555ed['ensureInt'](_0x38aceb.credits==0?61:_0x38aceb.credits)),
                 null != _0x38aceb['resources'] && (null != _0x38aceb['resources']['r1'] && _0x44f949['get_Resources']()['SetRes'](0x1, _0x38aceb['resources']['r1'], !0x1),
                 null != _0x38aceb['resources']['r2'] && _0x44f949['get_Resources']()['SetRes'](0x2, _0x38aceb['resources']['r2'], !0x1)),
                 _0x2fd659['IsBase']() && _0x44f949['get_Instance']()[_0x41d39e(0x65ad)](),
