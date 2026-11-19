@@ -321092,7 +321092,7 @@ function(_0x97f489, _0x544f44) {
                 'Disband': function() {
                     var _0x2bf99a = _0x568440
                       , _0x1dce62 = _0x568440;
-                    0x0 == this['_platoon'][_0x2bf99a(0x319c)]() ? this['DisbandConfirm']() : 0x0 == this['_platoon']['get_properties']()['get_canDamagedUnitsExit']() && this['_platoon']['hasDamagedUnits']() && !_0x5344a1[_0x2bf99a(a0_0x51c6c8._0xea7255)]() ? _0x4decc5['DisplayMessage'](_0x8d0ccb['getString']('widget_title__repair_units_before_disband'), _0x8d0ccb['getString']('widget_body__repair_units_before_disband')) : this['_platoon']['hasDamagedFireteams']() && !_0x5344a1['get_AllowDamagedPlatoonManagement']() ? _0x4decc5['DisplayMessage'](_0x8d0ccb['getString'](_0x2bf99a(0x364f)), _0x8d0ccb['getString']('widget_body__repair_fireteams_before_disband')) : _0x3aff72['Show'](new _0x34a805(_0x8d0ccb['getString']('common__disband'),_0x8d0ccb['getString']('widget__disband_platoon_return_to_storage_confirm'),!0x0,_0x8d0ccb[_0x2bf99a(0x227d)](_0x2bf99a(0x15dc)),_0x1e6405(this, this['DisbandConfirm'])));
+                    0x0 == this['_platoon'][_0x2bf99a(0x319c)]() ? this['DisbandConfirm']() : _0x3aff72['Show'](new _0x34a805(_0x8d0ccb['getString']('common__disband'),_0x8d0ccb['getString']('widget__disband_platoon_return_to_storage_confirm'),!0x0,_0x8d0ccb[_0x2bf99a(0x227d)](_0x2bf99a(0x15dc)),_0x1e6405(this, this['DisbandConfirm'])));
                 },
                 'DisbandConfirm': function() {
                     var _0x59bc5b = _0x568440
