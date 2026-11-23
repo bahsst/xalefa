@@ -281097,14 +281097,14 @@ function(_0x97f489, _0x544f44) {
                 '__properties__': _0x33af86(_0x2998d3['prototype'][_0x568440(0x7161)], {
                     'get_controlName': 'get_controlName'
                 })
-            });
-            _0x364eec['com.cc.ui.xbaux.messages.LogDisplay'] = _0x361d19,
-            _0x361d19[_0x568440(0x12e2)] = 'com.cc.ui.xbaux.messages.LogDisplay',
-            _0x361d19['__super__'] = _0xa9c029,
-            _0x361d19[_0x7d71ae(a0_0xdb7653._0x368e7a)] = _0x33af86(_0xa9c029['prototype'], {
-                '_message': null,
-                'get_message': function() {
-                    return this['_message'];
+            };
+          ((_0x55571c["com.cc.ui.xbaux.messages.LogDisplay"] = _0x2a58f4),
+            (_0x2a58f4["__name__"] = "com.cc.ui.xbaux.messages.LogDisplay"),
+            (_0x2a58f4["__super__"] = _0x162e7c),
+            (_0x2a58f4["prototype"] = _0x46a500(_0x162e7c["prototype"], {
+              _message: null,
+              get_message: function () {
+                return this["_message"];
                 },
                 '__class__': _0x361d19,
                 '__properties__': {
