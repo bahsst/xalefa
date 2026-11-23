@@ -281097,7 +281097,7 @@ function(_0x97f489, _0x544f44) {
                 '__properties__': _0x33af86(_0x2998d3['prototype'][_0x568440(0x7161)], {
                     'get_controlName': 'get_controlName'
                 })
-            };
+            });
           ((_0x55571c["com.cc.ui.xbaux.messages.LogDisplay"] = _0x2a58f4),
             (_0x2a58f4["__name__"] = "com.cc.ui.xbaux.messages.LogDisplay"),
             (_0x2a58f4["__super__"] = _0x162e7c),
