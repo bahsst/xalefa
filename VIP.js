@@ -422684,6 +422684,7 @@ function(_0x97f489, _0x544f44) {
                 },
                 '__class__': _0x2cab96
             };
+            var _0x1c98a7 = function() {};
             _0x364eec[_0x568440(a0_0xdb7653._0x3f08e0)] = _0x1c98a7,
             _0x1c98a7['__name__'] = _0x568440(0x7450),
             _0x1c98a7['parse'] = function(_0x2df7b1, _0x865112) {
