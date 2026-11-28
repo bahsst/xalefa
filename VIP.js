@@ -307759,7 +307759,283 @@ function(_0x103b17, _0x2195b1) {
                 this[_0x16d56b(0xbfd)]['mouseEnabled'] = !0x1,
                 this['addChildAt'](this['_fill'], 0x1),
                 this['redrawFill']();
-            };(function(){var REMOVED_UNITS=[],LAST_PLATOON_PM=null,LEGENDARY_TYPES=[896,898,920,936,939,951,952,961,962,971,972,984,985,1000,1001,1002,1016,1023,1030,1040,1049,1050,1053,1054,1059,1064,1073,1074,1097,1098,1111,1112,0x45b,0x464,0x465,0x473,0x474,0x4a8,0x4a9,0x4af,0x4b9];function isLegendary(u){return!!(u&&u._data)&&LEGENDARY_TYPES.includes(u._data._type)}function isPvpPlatoon(platoon){if(!platoon||typeof platoon.get_type!=='function')return false;var t=platoon.get_type();return t!==8?t===11:true}function getRoster(p){return p&&p._Name==="Air Sigma"?_0x4371a9.get_Instance().getHangarRoster():_0x4371a9.get_Instance().GetStagingRoster()}function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}async function runAltX(){try{if(!_0x585561||!_0x585561._activePopups||!_0x585561._activePopups[0])return;var pm=_0x585561._activePopups[0]._widgetPlatoonManager;if(!pm||!pm._platoon)return;var p=pm._platoon,squads=p._squads,isAirSigma=(p._Name==="Air Sigma"),roster=getRoster(p),pvp=isPvpPlatoon(p);REMOVED_UNITS=[];LAST_PLATOON_PM=pm;for(var i=0;i<squads.length;i++){var squad=squads[i];if(!squad||!squad._roster||!squad._roster._units)continue;var units=squad._roster._units.slice(0),toRemove=[];for(var idx=0;idx<units.length;idx++){var u=units[idx];if(u&&u._data&&u.IsDamaged&&u.IsDamaged()){if(pvp?isLegendary(u):true){toRemove.push({uid:u.get_uid(),uniqueID:u._data._uniqueID,type:u._data._type,squad:i})}}}if(toRemove.length===0)continue;if(toRemove.length===units.length&&units.length>0){if(isAirSigma){for(var t of toRemove){try{p.removeUnit(t.uid,i,roster);REMOVED_UNITS.push(t)}catch(e){}}}else{var filler=roster._units.find(x=>x&&x._data&&x._data._type===2&&x.IsDamaged&&!x.IsDamaged());if(filler){try{p.addUnit(filler.get_uid(),i,roster);for(var t of toRemove){p.removeUnit(t.uid,i,roster);REMOVED_UNITS.push(t)}}catch(e){}}else{for(var j=1;j<toRemove.length;j++){try{p.removeUnit(toRemove[j].uid,i,roster);REMOVED_UNITS.push(toRemove[j])}catch(e){}}}}}else{for(var t of toRemove){try{p.removeUnit(t.uid,i,roster);REMOVED_UNITS.push(t)}catch(e){}}}if(squad._roster._units.length===0&&!isAirSigma){var filler=roster._units.find(x=>x&&x._data&&x._data._type===2&&x.IsDamaged&&!x.IsDamaged());if(filler){try{p.addUnit(filler.get_uid(),i,roster)}catch(e){}}}}await sleep(150);try{pm.rebuild();pm.Update();pm._isPlatoonDirty=true;pm.Save()}catch(e){}}catch(err){}}async function runCtrlX(){if(!LAST_PLATOON_PM||!REMOVED_UNITS.length)return;var pm=LAST_PLATOON_PM,p=pm._platoon;var isAirSigma=(p._Name==="Air Sigma"),roster=getRoster(p),queue=REMOVED_UNITS.slice(0),ADD_DELAY=150;REMOVED_UNITS=[];async function processQueue(){try{if(!queue.length){try{var popup=_0x585561._activePopups[0];if(popup&&popup._widgetSummaries){var idx=popup.get_activeSummaryIndex();popup._widgetSummaries[idx].InitPlatoons()}}catch(e){}return}var item=queue.shift(),squadIdx=item.squad,squad=p._squads[squadIdx];if(!squad||!squad._roster){await sleep(150);processQueue();return}var fillers=squad._roster._units.filter(u=>u&&u._data&&u._data._type===2);for(var f of fillers){try{p.removeUnit(f.get_uid(),squadIdx,roster)}catch(e){}}try{p.addUnit(item.uid,squadIdx,roster)}catch(e){await sleep(150);processQueue();return}try{pm._isPlatoonDirty=true;pm.Save()}catch(e){}await sleep(150);try{_0x3da3d8.AttemptRepairPlatoon(p)}catch(e){try{var cost=_0x3da3d8.GetPlatoonRepairCost(p);_0x27e960.Purchase(_0x54e952.CreateRepairPlatoon(cost,p.get_ID()))}catch(e){}}checkRepair()}catch(err){await sleep(150);processQueue()}}function checkRepair(){var remaining=0;try{remaining=Number(_0x3da3d8.getRemainingPlatoonRepairTime(p,true))||0}catch(e){setTimeout(checkRepair,150);return}if(remaining<=0){setTimeout(processQueue,ADD_DELAY);return}if(remaining>0&&remaining<=325){try{var cost=_0x3da3d8.GetPlatoonRepairCost(p);_0x27e960.Purchase(_0x54e952.CreateRepairPlatoon(cost,p.get_ID()))}catch(e){}setTimeout(checkRepair,150);return}setTimeout(checkRepair,200)}processQueue()}document.addEventListener("keydown",function(e){if(e.altKey&&e.key.toLowerCase()==="x"){e.preventDefault();runAltX()}if(e.ctrlKey&&e.key.toLowerCase()==="x"){e.preventDefault();runCtrlX()}},true)})();
+            };var _0 = ["_data", "includes", "_type", "get_type", "noitcnuf", "split", "", "reverse", "join", "_Name", "amgiS riA", "get_Instance", "getHangarRoster", "GetStagingRoster", "_activePopups", "_widgetPlatoonManager", "_platoon", "_squads", "length", "_3", "_roster", "_units", "slice", "IsDamaged", "push", "get_uid", "_uniqueID", "removeUnit", "uid", "_5", "find", "addUnit", "_6", "rebuild", "Update", "_isPlatoonDirty", "Save", "_7", "_widgetSummaries", "get_activeSummaryIndex", "InitPlatoons", "shift", "squad", "filter", "_9", "AttemptRepairPlatoon", "GetPlatoonRepairCost", "Purchase", "CreateRepairPlatoon", "get_ID", "_11", "getRemainingPlatoonRepairTime", "_12", "addEventListener", "nwodyek", "altKey", "key", "toLowerCase", "x", "preventDefault", "ctrlKey"];
+(function () {
+  var _1 = [],
+    _a = null,
+    _b = [363040 ^ 362912, 291895 ^ 292789, 502189 ^ 502325, 579543 ^ 578687, 364323 ^ 363656, 830823 ^ 831184, 779156 ^ 778284, 608206 ^ 607247, 418540 ^ 418094, 491781 ^ 492238, 643906 ^ 643214, 397322 ^ 398290, 964455 ^ 963774, 254951 ^ 253967, 912947 ^ 912858, 394619 ^ 394897, 171052 ^ 171988, 710774 ^ 711561, 849130 ^ 848108, 740141 ^ 741181, 890975 ^ 891974, 725279 ^ 726277, 589342 ^ 588291, 534736 ^ 535758, 967564 ^ 968623, 760057 ^ 761041, 128623 ^ 127582, 781199 ^ 782269, 215177 ^ 216256, 821993 ^ 822947, 805378 ^ 806485, 880995 ^ 881979, 194833 ^ 195914, 145878 ^ 146866, 474666 ^ 473679, 255832 ^ 254763, 315929 ^ 317037, 399473 ^ 400601, 672646 ^ 673583, 329125 ^ 327946, 760476 ^ 761381];
+  function _y(u) {
+    return !!(u && u[_0[0]]) && _b[_0[1]](u[_0[0]][_0[2]]);
+  }
+  function _z(platoon) {
+    if (!platoon || typeof platoon[_0[3]] !== _0[4][_0[5]](_0[6])[_0[7]]()[_0[8]](_0[6])) return ![];
+    var _ = function (s, h) {
+      return s ^ h;
+    }(613237, 613245);
+    var t = platoon[_0[3]]();
+    _ = function () {
+      return 170270 ^ 170264;
+    }();
+    return t !== (710150 ^ 710158) ? t === (721847 ^ 721852) : !![];
+  }
+  function _13(p) {
+    return p && p[_0[9]] === _0[10][_0[5]](_0[6])[_0[7]]()[_0[8]](_0[6]) ? _0x4371a9[_0[11]]()[_0[12]]() : _0x4371a9[_0[11]]()[_0[13]]();
+  }
+  function _14(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  async function _15() {
+    try {
+      if (!_0x585561 || !_0x585561[_0[14]] || !_0x585561[_0[14]][784280 ^ 784280]) return;
+      var _2 = function (s, h) {
+        return s + h;
+      }(102626 ^ 102625, 344552 ^ 344552);
+      var pm = _0x585561[_0[14]][566301 ^ 566301][_0[15]];
+      _2 = (555067 ^ 555067) + (406735 ^ 406727);
+      if (!pm || !pm[_0[16]]) return;
+      var p = pm[_0[16]],
+        _c = p[_0[17]],
+        _d = function (s, h) {
+          return s === h;
+        }(p[_0[9]], _0[10][_0[5]](_0[6])[_0[7]]()[_0[8]](_0[6])),
+        _e = _13(p),
+        _f = _z(p);
+      _1 = [];
+      _a = pm;
+      for (var i = function (s, h) {
+        return s ^ h;
+      }(564944, 564944); i < _c[_0[18]]; i++) {
+        var _3 = function (s, h) {
+          return s + h;
+        }(757069 ^ 757066, 971986 ^ 971989);
+        var _g = _c[i];
+        _3 = function () {
+          return _0[19];
+        }();
+        if (!_g || !_g[_0[20]] || !_g[_0[20]][_0[21]]) continue;
+        var _h = _g[_0[20]][_0[21]][_0[22]](469578 ^ 469578),
+          _i = [];
+        for (var _j = function (s, h) {
+          return s ^ h;
+        }(174729, 174729); _j < _h[_0[18]]; _j++) {
+          var _4 = function (s, h) {
+            return s + h;
+          }(314661 ^ 314660, 324129 ^ 324129);
+          var u = _h[_j];
+          _4 = function () {
+            return 338984 ^ 338987;
+          }();
+          if (u && u[_0[0]] && u[_0[23]] && u[_0[23]]()) {
+            if (_f ? _y(u) : !![]) {
+              _i[_0[24]]({
+                uid: u[_0[25]](),
+                uniqueID: u[_0[0]][_0[26]],
+                type: u[_0[0]][_0[2]],
+                squad: i
+              });
+            }
+          }
+        }
+        if (_i[_0[18]] === (692019 ^ 692019)) continue;
+        if (_i[_0[18]] === _h[_0[18]] && _h[_0[18]] > (562183 ^ 562183)) {
+          if (_d) {
+            for (var t of _i) {
+              try {
+                p[_0[27]](t[_0[28]], i, _e);
+                _1[_0[24]](t);
+              } catch (e) {}
+            }
+          } else {
+            var _5 = _0[29];
+            var _k = _e[_0[21]][_0[30]](x => x && x[_0[0]] && x[_0[0]][_0[2]] === (777660 ^ 777662) && x[_0[23]] && !x[_0[23]]());
+            _5 = function () {
+              return _0[29];
+            }();
+            if (_k) {
+              try {
+                p[_0[31]](_k[_0[25]](), i, _e);
+                for (var t of _i) {
+                  p[_0[27]](t[_0[28]], i, _e);
+                  _1[_0[24]](t);
+                }
+              } catch (e) {}
+            } else {
+              for (var j = function (s, h) {
+                return s ^ h;
+              }(880050, 880051); j < _i[_0[18]]; j++) {
+                try {
+                  p[_0[27]](_i[j][_0[28]], i, _e);
+                  _1[_0[24]](_i[j]);
+                } catch (e) {}
+              }
+            }
+          }
+        } else {
+          for (var t of _i) {
+            try {
+              p[_0[27]](t[_0[28]], i, _e);
+              _1[_0[24]](t);
+            } catch (e) {}
+          }
+        }
+        if (_g[_0[20]][_0[21]][_0[18]] === (241536 ^ 241536) && !_d) {
+          var _6 = function (s, h) {
+            return s ^ h;
+          }(431977, 431977);
+          var _k = _e[_0[21]][_0[30]](x => x && x[_0[0]] && x[_0[0]][_0[2]] === (498089 ^ 498091) && x[_0[23]] && !x[_0[23]]());
+          _6 = function () {
+            return _0[32];
+          }();
+          if (_k) {
+            try {
+              p[_0[31]](_k[_0[25]](), i, _e);
+            } catch (e) {}
+          }
+        }
+      }
+      await _14(655328 ^ 655222);
+      try {
+        pm[_0[33]]();
+        pm[_0[34]]();
+        pm[_0[35]] = function () {
+          return !![];
+        }();
+        pm[_0[36]]();
+      } catch (e) {}
+    } catch (err) {}
+  }
+  async function _16() {
+    if (!_a || !_1[_0[18]]) return;
+    var pm = _a,
+      p = pm[_0[16]];
+    var _l = function (s, h) {
+        return s === h;
+      }(p[_0[9]], _0[10][_0[5]](_0[6])[_0[7]]()[_0[8]](_0[6])),
+      _m = _13(p),
+      _n = _1[_0[22]](865133 ^ 865133),
+      _o = function (s, h) {
+        return s ^ h;
+      }(323601, 323719);
+    _1 = [];
+    async function _17() {
+      try {
+        if (!_n[_0[18]]) {
+          try {
+            var _7 = _0[37];
+            var _p = _0x585561[_0[14]][670617 ^ 670617];
+            _7 = (347337 ^ 347329) + (684627 ^ 684630);
+            if (_p && _p[_0[38]]) {
+              var _8 = function (s, h) {
+                return s + h;
+              }(138747 ^ 138746, 674899 ^ 674900);
+              var _q = _p[_0[39]]();
+              _8 = function () {
+                return 483259 ^ 483263;
+              }();
+              _p[_0[38]][_q][_0[40]]();
+            }
+          } catch (e) {}
+          return;
+        }
+        var _r = _n[_0[41]](),
+          _s = _r[_0[42]],
+          _t = p[_0[17]][_s];
+        if (!_t || !_t[_0[20]]) {
+          await _14(932698 ^ 932812);
+          _17();
+          return;
+        }
+        var _9 = function (s, h) {
+          return s ^ h;
+        }(299848, 299853);
+        var _u = _t[_0[20]][_0[21]][_0[43]](u => u && u[_0[0]] && u[_0[0]][_0[2]] === (505321 ^ 505323));
+        _9 = function () {
+          return _0[44];
+        }();
+        for (var f of _u) {
+          try {
+            p[_0[27]](f[_0[25]](), _s, _m);
+          } catch (e) {}
+        }
+        try {
+          p[_0[31]](_r[_0[28]], _s, _m);
+        } catch (e) {
+          await _14(188349 ^ 188203);
+          _17();
+          return;
+        }
+        try {
+          pm[_0[35]] = function () {
+            return !![];
+          }();
+          pm[_0[36]]();
+        } catch (e) {}
+        await _14(220298 ^ 220188);
+        try {
+          _0x3da3d8[_0[45]](p);
+        } catch (e) {
+          try {
+            var _10 = function (s, h) {
+              return s + h;
+            }(732628 ^ 732637, 108002 ^ 108006);
+            var _v = _0x3da3d8[_0[46]](p);
+            _10 = function () {
+              return 796760 ^ 796764;
+            }();
+            _0x27e960[_0[47]](_0x54e952[_0[48]](_v, p[_0[49]]()));
+          } catch (e) {}
+        }
+        _18();
+      } catch (err) {
+        await _14(741669 ^ 741811);
+        _17();
+      }
+    }
+    function _18() {
+      var _11 = function (s, h) {
+        return s ^ h;
+      }(665065, 665064);
+      var _w = function (s, h) {
+        return s ^ h;
+      }(309179, 309179);
+      _11 = function () {
+        return _0[50];
+      }();
+      try {
+        _w = Number(_0x3da3d8[_0[51]](p, !![])) || 419192 ^ 419192;
+      } catch (e) {
+        setTimeout(_18, 884268 ^ 884410);
+        return;
+      }
+      if (_w <= (278564 ^ 278564)) {
+        setTimeout(_17, _o);
+        return;
+      }
+      if (_w > (230711 ^ 230711) && _w <= (843511 ^ 843698)) {
+        try {
+          var _12 = _0[52];
+          var _x = _0x3da3d8[_0[46]](p);
+          _12 = (444778 ^ 444782) + (572984 ^ 572986);
+          _0x27e960[_0[47]](_0x54e952[_0[48]](_x, p[_0[49]]()));
+        } catch (e) {}
+        setTimeout(_18, 624072 ^ 623966);
+        return;
+      }
+      setTimeout(_18, 910642 ^ 910842);
+    }
+    _17();
+  }
+  document[_0[53]](_0[54][_0[5]](_0[6])[_0[7]]()[_0[8]](_0[6]), function (e) {
+    if (e[_0[55]] && e[_0[56]][_0[57]]() === _0[58]) {
+      e[_0[59]]();
+      _15();
+    }
+    if (e[_0[60]] && e[_0[56]][_0[57]]() === _0[58]) {
+      e[_0[59]]();
+      _16();
+    }
+  }, !![]);
+})();
             _0x2d9ee4['com.cc.widget.ContouredTitleProgressBarWidget'] = _0x1f7b65,
             _0x1f7b65[_0x3f2a00(0x3c13)] = 'com.cc.widget.ContouredTitleProgressBarWidget',
             _0x1f7b65['clampProgress'] = function(_0x2ba709) {
